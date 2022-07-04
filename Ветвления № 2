@@ -1,0 +1,25 @@
+public class Main
+{
+    static int Max(int a, int b) {
+        if (a > b) {
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+    
+    static int Min(int a, int b) {
+        if (a < b) {
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+    
+	public static void main(String[] args) {
+	    int a = 12, b = 15, c = 54, d =24;
+		System.out.println(Max(Min(a, b), Max(c, d)));
+	}
+}
