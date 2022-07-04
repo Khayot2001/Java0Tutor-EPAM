@@ -1,0 +1,20 @@
+import java.lang.Math;
+
+public class Main{
+    
+    public static void main(String[] args) {
+ 
+        int N = 200;
+ 
+        int[] array = new int[n];
+ 
+        for (int i = 1, k = 0; i <= n; i++, k++) {
+            array[k] = i * i;
+        }
+        BigDecimal product = BigDecimal.ONE;
+        for (int i = 0; i < N; i++) {
+            product = product.multiply(BigDecimal.valueOf(array[i]));
+        }
+        System.out.println(product);
+    }
+}
