@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        int m = 0, n = 0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите начало отрезка: ");
+        m = in.nextInt();
+        System.out.println("Введите конец отрезка: ");
+        n = in.nextInt();
+        
+        for (int x = m; x <= n; x++){
+            System.out.printf(x + ":  ");
+            
+            for (int i = 2; i <= x / 2; ++i){
+                if (x % i == 0){
+                    System.out.printf(i + " ");
+                }
+            }
+            
+        System.out.println();
+        }
+    }
+}
