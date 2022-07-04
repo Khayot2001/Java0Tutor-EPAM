@@ -1,0 +1,14 @@
+public class Main
+{
+    public static void main(String[] args) {
+	    int a = 1, b = 3; // отверстие
+	    int x = 3, y = 1, z = 2; // кирпич
+        
+        if (((a>=x) && (b>=y)) || ((a>=y) && (b>=x)) || ((a>=x) && (b>=z)) || ((a>=z) && (b>=x))  || (((a>=z) && (b>=y)) || ((a>=y) && (b>=z)))){
+            System.out.println("Пройдёт");
+        }
+        else{
+            System.out.println("Не пройдёт");
+        }
+    }
+}
