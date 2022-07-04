@@ -1,0 +1,17 @@
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args) {
+        int n = 2;
+        double e = 1e-3;
+        int num = 1;
+        double sum = 0;
+        while (Math.abs(Math.pow(num, -n)) >= e){
+            sum += Math.pow(num, -n);
+            ++num;
+        }
+        System.out.println(sum);
+    }
+}
